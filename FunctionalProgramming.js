@@ -93,3 +93,33 @@ console.log(ageN) // 5
 
 //some
 // some: Check if some of the elements are similar in one aspect. It returns boolean
+
+//sorting numeric
+const numberz = [9.81, 3.14, 100, 37]
+// Using sort method to sort number items provide a wrong result. see below
+console.log(numberz.sort()) //[100, 3.14, 37, 9.81]
+numberz.sort(function (a, b) {
+  return a - b
+})
+
+console.log(numberz) // [3.14, 9.81, 37, 100]
+
+numberz.sort(function (a, b) {
+  return b - a
+})
+console.log(numberz) //[100, 37, 9.81, 3.14]
+
+//Sorting 0bject Arrays
+
+const users = [
+    { name: 'Asabeneh', age: 150 },
+    { name: 'Brook', age: 50 },
+    { name: 'Eyob', age: 100 },
+    { name: 'Elias', age: 22 },
+  ]
+  users.sort((a, b) => {
+    if (a.age < b.age) return -1
+    if (a.age > b.age) return 1
+    return 0
+  })
+  console.log(users)

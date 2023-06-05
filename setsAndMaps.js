@@ -106,3 +106,32 @@ c = a.filter((num) => !B.has(num))
  C = new Set(c)
 
 console.log(C)
+
+
+            //Maps
+const map= new Map()
+console.log(map);
+
+// Adding values to the Map
+const countriesMap = new Map()
+console.log(countriesMap.size) // 0
+countriesMap.set('Finland', 'Helsinki')
+countriesMap.set('Sweden', 'Stockholm')
+countriesMap.set('Norway', 'Oslo')
+console.log(countriesMap)
+console.log(countriesMap.size)
+
+//Getting a value from Map
+console.log(countriesMap.get('Finland'))
+
+//Checking key in Map
+// Check if a key exists in a map using has method. It returns true or false.
+console.log(countriesMap.has('Finland'))
+
+for (const country of countriesMap) {
+    console.log(country)
+  }
+
+  for (const [country, city] of countriesMap){
+    console.log(country, city)
+   }

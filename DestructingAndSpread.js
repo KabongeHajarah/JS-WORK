@@ -190,3 +190,17 @@ const todoList = [
 for (const {task, time, completed} of todoList){
   console.log(task, time, completed)
 }
+
+     
+
+        //SPREAD OPERATOR
+ //We can copy an object using a spread operator
+        const user = {
+            name:'Asabeneh',
+            title:'Programmer',
+            country:'Finland',
+            city:'Helsinki'
+          }
+          
+          const copiedUser = {...user}
+          console.log(copiedUser)

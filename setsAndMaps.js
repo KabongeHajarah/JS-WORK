@@ -2247,8 +2247,10 @@ function mostSpoken(countriesN,limit) {
 const tenMostLanguages= mostSpoken(countriesN,10);
 console.log(tenMostLanguages);
 
+console.log(mostSpoken(countriesN, 3))
+console.log(mostSpoken(countriesN, 5))
 //    // Your output should look like this
-//    console.log(mostSpokenLanguages(countries, 10))
+
 //    [
 //      { English: 91 },
 //      { French: 45 },
@@ -2263,10 +2265,11 @@ console.log(tenMostLanguages);
 //      { Serbian: 4 }
 //    ]
 
-//   // Your output should look like this
-  console.log(mostSpoken(countriesN, 3))
-//   [
+ // Your output should look like this
+ //   [
 //   {English:91},
 //   {French:45},
 //   {Arabic:25}
 //   ]
+
+

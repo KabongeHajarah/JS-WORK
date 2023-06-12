@@ -69,7 +69,21 @@ titles.forEach((title, i) => {
     title.style.color = 'red'
   }
 })
-    
+  let newestTitle= document.createElement('h1')
+  newestTitle.className='title'
+  newestTitle.style.fontSize='24px'
+  newestTitle.textContent='Creating HTML elements by DOM'
+  console.log(newestTitle);
+  
+  let title
+        for (let i = 0; i < 3; i++) {
+            title = document.createElement('h1')
+            title.className = 'title'
+            title.style.fontSize = '24px'
+            title.style.color='blue'
+            title.textContent = 'Hello'
+            document.body.appendChild(title)
+        }
     const lists = `
     <li>30DaysOfPython Challenge Done</li>
             <li>30DaysOfJavaScript Challenge Ongoing</li>
@@ -78,8 +92,11 @@ titles.forEach((title, i) => {
             <li>30DaysOfDataAnalysis Challenge Coming</li>
             <li>30DaysOfReactNative Challenge Coming</li>
             <li>30DaysOfMachineLearning Challenge Coming</li>`
-  const ul = document.querySelector('ul')
-  ul.innerHTML = lists
+            const ul = document.querySelector('ul')
+         lists = document.querySelectorAll('li')
+        for (const list of lists) {
+            ul.removeChild(list)}
+            
 </script>
 </body>
 </html>

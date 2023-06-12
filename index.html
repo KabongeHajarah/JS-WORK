@@ -7,6 +7,15 @@
     <title>Document</title>
 </head>
 <body>
+
+  <h1 class='title' id='first-title'>First Title</h1>
+  <h1 class='title' id='second-title'>Second Title</h1>
+  <h1 class='title' id='third-title'>Third Title</h1>
+  <h1></h1>
+
+
+
+
     <script src="/ConsoleObjectMethods.js"></script>
     <script>
         //Example of writing Clean CODE
@@ -40,5 +49,37 @@ switch (day) {
    console.log('It is not a week day.')
 }
     </script>
+
+<script >
+    
+   allTitle= document.getElementsByTagName('h1');
+console.log(allTitle);
+console.log(allTitle.length);
+
+for (let i=0; i<allTitle.length; i++){
+    console.log(allTitle[i]);
+}
+    
+const titles = document.querySelectorAll('h1')
+titles.forEach((title, i) => {
+  title.style.fontSize = '24px' // all titles will have 24px font size
+  if (i % 2 === 0) {
+    title.style.color = 'green'
+  } else {
+    title.style.color = 'red'
+  }
+})
+    
+    const lists = `
+    <li>30DaysOfPython Challenge Done</li>
+            <li>30DaysOfJavaScript Challenge Ongoing</li>
+            <li>30DaysOfReact Challenge Coming</li>
+            <li>30DaysOfFullStack Challenge Coming</li>
+            <li>30DaysOfDataAnalysis Challenge Coming</li>
+            <li>30DaysOfReactNative Challenge Coming</li>
+            <li>30DaysOfMachineLearning Challenge Coming</li>`
+  const ul = document.querySelector('ul')
+  ul.innerHTML = lists
+</script>
 </body>
 </html>

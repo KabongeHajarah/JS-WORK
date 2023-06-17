@@ -17,12 +17,14 @@ try {
 try {
     let lastName = 'Yetayeh'
     let fullName = fistName + ' ' + lastName
+    console.log(fullName);
   } catch (err) {
     console.log(err)
   }
   try {
     let lastName = 'Yetayeh'
     let fullName = fistName + ' ' + lastName
+    console.log(fullName);
   } catch (err) {
     console.error(err) // we can use console.log() or console.error()
   } finally {

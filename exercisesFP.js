@@ -88,7 +88,9 @@ console.log(` Estonia,${sentence} are North European Countries` );
 
 
 // Exercises: Level 2
-// Find the total price of products by chaining two or more array iterators(eg. arr.map(callback).filter(callback).reduce(callback))
+// Find the total price of products by chaining two or
+// more array iterators(eg. arr.map(callback).filter(callback).reduce(callback))
+
 // Find the sum of price of products using only reduce reduce(callback))
 // Declare a function called categorizeCountries which returns an array of countries which have some common pattern(you find the countries array in this repository as countries.js(eg 'land', 'ia', 'island','stan')).
 // Create a function which return an array of objects, which is the letter and the number of times the letter use to start with a name of a country.

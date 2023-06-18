@@ -16,14 +16,16 @@ try {
 
 try {
     let lastName = 'Yetayeh'
-    let fullName = fistName + ' ' + lastName
+    let firstName='bellah Ellah'
+    let fullName = firstName + ' ' + lastName
     console.log(fullName);
   } catch (err) {
     console.log(err)
   }
   try {
     let lastName = 'Yetayeh'
-    let fullName = fistName + ' ' + lastName
+    let firstName='bellah Ellah'
+    let fullName = firstName + ' ' + lastName
     console.log(fullName);
   } catch (err) {
     console.error(err) // we can use console.log() or console.error()
@@ -33,7 +35,8 @@ try {
 
   try {
     let lastName = 'Yetayeh'
-    let fullName = fistName + ' ' + lastName
+    let firstName='bellah Ellah'
+    let fullName = firstName + ' ' + lastName
   } catch (err) {
     console.log('Name of the error', err.name)
     console.log('Error message', err.message)

@@ -39,7 +39,7 @@ const titles = document.querySelectorAll('h1')
 titles[3].setAttribute('class', 'title')
 titles[3].setAttribute('id', 'fourth-title')
 
-////another way to setting an attribute
+//another way to setting an attribute
 titles[3].className = 'title'
 titles[3].id = 'fourth-title'
 
@@ -59,5 +59,3 @@ titles[3].classList.remove('title', 'header-title')
 const titles = document.querySelectorAll('h1')
 titles[3].textContent = 'Fourth Title'
 
-//Adding Text Content using innerHTML
-// Most people get confused between textContent and innerHTML. textContent is meant to add text to an HTML element, however innerHTML can add a text or HTML element or elements as a child.

@@ -15,7 +15,49 @@
 
 
 
+  <div class="container">
+    <h1>Number Generator</h1>
+    <div id="number-container"></div>
+    <button id="generate-button" onclick="generateNumbers()">Generate Numbers</button>
+  </div>
+  <script >
+   function generateNumbers() {
+  const numberContainer = document.getElementById("number-container");
+  numberContainer.innerHTML = "";
 
+  for (let i = 1; i <= 100; i++) {
+    let numberDiv = document.createElement("div");
+    numberDiv.textContent = i;
+
+    if (i % 2 === 0) {
+      numberDiv.classList.add("even");
+    } else {
+      numberDiv.classList.add("odd");
+    }
+
+    if (isPrime(i)) {
+      numberDiv.classList.add("prime");
+    }
+
+    numberContainer.appendChild(numberDiv);
+  }
+}
+
+function isPrime(num) {
+  if (num < 2) {
+    return false;
+  }
+
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+}
+ 
+  </script>
     <script src="/ConsoleObjectMethods.js"></script>
     <script>
         //Example of writing Clean CODE
